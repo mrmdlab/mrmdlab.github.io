@@ -1,0 +1,10 @@
+## todo
+- i18n
+- build
+- pages
+    - pricing
+    - service
+    - contact
+    - home
+    - 404
+## changelog
