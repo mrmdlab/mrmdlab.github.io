@@ -1,4 +1,5 @@
 ## todo
+- adapt to phone?
 - i18n
 - build
 - pages
