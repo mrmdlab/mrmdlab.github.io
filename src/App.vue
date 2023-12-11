@@ -4,8 +4,10 @@
       <v-app-bar-title @click="$router.push('/')">MRMDLab</v-app-bar-title>
       <v-spacer></v-spacer>
       <template v-slot:append>
+        <!-- <v-btn variant="plain" @click="$router.push('/products')">Products</v-btn> -->
         <v-btn variant="plain" @click="$router.push('/service')">Service</v-btn>
         <v-btn variant="plain" @click="$router.push('/pricing')">Pricing</v-btn>
+        <v-btn variant="plain" @click="$router.push('/team')">Team</v-btn>
         <v-btn variant="plain" @click="$router.push('/contact')">Contact</v-btn>
       </template>
     </v-app-bar>

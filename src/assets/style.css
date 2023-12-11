@@ -1,0 +1,12 @@
+@font-face {
+    font-family: Ubuntu;
+    src: url("@/assets/Ubuntu-Regular.ttf");
+}
+
+.ubuntu {
+    font-family: Ubuntu;
+}
+
+.courier-new {
+    font-family: 'Courier New';
+}
