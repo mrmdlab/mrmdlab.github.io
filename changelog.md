@@ -1,5 +1,6 @@
 ## todo
 - adapt to phone?
+- update bruker2bids to get more parameters
 - i18n
 - build
 - pages

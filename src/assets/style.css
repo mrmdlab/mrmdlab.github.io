@@ -10,3 +10,12 @@
 .courier-new {
     font-family: 'Courier New';
 }
+
+.monospace {
+    font-family: monospace;
+}
+
+.caption {
+    font-size: small;
+    font-family: Calibri;
+}

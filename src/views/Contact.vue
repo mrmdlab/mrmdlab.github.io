@@ -1,7 +1,7 @@
 <template>
     <v-row>
         <v-col cols="8" class="text-center">
-            <v-img height="90%" src="@/assets/Biopolis sign.jpg" alt="Biopolis sign" />
+            <v-img height="90%" src="@/assets/photos/Biopolis sign.jpg" alt="Biopolis sign" />
             <p>"Biopolis sign" by Kelman Chiang from SG photobank</p>
         </v-col>
         <v-col cols="4" class="d-flex flex-column justify-center">
