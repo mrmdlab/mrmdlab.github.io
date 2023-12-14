@@ -2,6 +2,8 @@
 - adapt to phone?
 - update bruker2bids to get more parameters
 - i18n
+- what MRI can help you do
+- the whole workflow of collaboration, how long each part takes. eg. we should be blinded of the groups blabla
 - build
 - pages
     - pricing
