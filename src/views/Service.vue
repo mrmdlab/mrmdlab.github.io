@@ -48,7 +48,8 @@
                                 </v-table>
                                 <p class="caption">*scan duration doesn't include time for preparation (induction of
                                     anesthesia, tune and match, animal positioning, etc)</p>
-                                <p class="caption">*example images shown here have been slightly distorted due to JPEG and GIF compression.</p>
+                                <p class="caption">*example images shown here have been slightly distorted due to JPEG and
+                                    GIF compression.</p>
                             </v-col>
                         </v-row>
                     </v-expansion-panel-text>
@@ -73,20 +74,20 @@ export default {
                 imaging: {
                     title: "Imaging & Spectroscopy",
                     items: [
-                        "rodent spectoscopy",
+                        // "rodent spectoscopy",
                         "rodent structural MRI",
                         "rodent brain functional MRI",
                         "rodent brain diffusion MRI",
                     ]
                 },
                 analysis: {
-                    title: "Analysi",
+                    title: "Analysis",
                     items: [
                         // Are we able to analyze human data? Maybe not for now
-                        "rodent spectoscopy analysis",
+                        // "rodent spectoscopy analysis",
                         "rodent resting state fMRI",
-                        "rodent fiber tractography",
-                        "rodent DTI",
+                        // "rodent fiber tractography",
+                        // "rodent DTI",
                     ]
                 }
             },
@@ -114,8 +115,8 @@ export default {
                                 "dimension": "2D",
                                 "effective TE": "25.0 ms",
                                 "TR": "1625.5 ms",
-                                "echo train length":"8",
-                                "flip angle":"90",
+                                "echo train length": "8",
+                                "flip angle": "90",
                                 "gating": "None"
                             },
                         },
@@ -138,8 +139,8 @@ export default {
                                 "dimension": "2D",
                                 "TE": "2.7 ms",
                                 "TR": "414.1 ms",
-                                "echo train length":"1",
-                                "flip angle":"50",
+                                "echo train length": "1",
+                                "flip angle": "50",
                                 "gating": "respiration"
                             },
                         },
@@ -151,7 +152,7 @@ export default {
                     examples: [
                         {
                             name: "Rat brain resting state fMRI",
-                            description: "Investigate the functional connectivity of the rat brain at resting state. The rat is intubated before it's positioned in the scanner.  ",
+                            description: "Investigate the functional connectivity of the rat brain at resting state. The rat is intubated before it's positioned in the scanner.",
                             photo: import("@/assets/examples/Rat brain resting state fMRI.jpg"),
                             gif: import("@/assets/examples/Rat brain resting state fMRI.gif"),
                             params: {
@@ -168,13 +169,44 @@ export default {
                                 "dimension": "2D",
                                 "effective TE": "15.0 ms",
                                 "TR": "1000.0 ms",
-                                "echo train length":"64",
-                                "flip angle":"53",
+                                "echo train length": "64",
+                                "flip angle": "53",
                                 "gating": "None",
                             },
                         },
                     ]
-                }
+                },
+                // "rodent brain diffusion MRI": {
+                //     result: "NIfTI data in BIDS arrangement",
+                //     description: "",
+                //     examples: [
+                //         {
+                //             name: "Mouse brain DWI",
+                //             description: "",
+                //             photo: import("@/assets/examples/.jpg"),
+                //             gif: import("@/assets/examples/.gif"),
+                //             params: {
+                //                 "scan duration": "",
+                //                 "averages": "",
+                //                 "field strength": "",
+                //                 "orientation": "",
+                //                 "slice gap": "",
+                //                 "image size": "",
+                //                 "resolution": "",
+                //                 "field of view": "",
+                //                 "condition": "in vivo",
+                //                 "sequence": "",
+                //                 "dimension": "2D",
+                //                 "TE": "",
+                //                 "effective TE": "",
+                //                 "TR": "",
+                //                 "echo train length": "",
+                //                 "flip angle": "",
+                //                 "gating": "None",
+                //             },
+                //         },
+                //     ]
+                // },
             }
         }
     },

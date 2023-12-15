@@ -1,5 +1,6 @@
 ## todo
 - adapt to phone?
+- SEO, SSG, SSR
 - update bruker2bids to get more parameters
 - i18n
 - what MRI can help you do
@@ -8,6 +9,11 @@
 - pages
     - pricing
     - service
+        - spectroscopy
+            - STEAM, PRESS, ISIS
+            - on chemical material? (NUS, NTU both have their own machines)
+            - fid
+            - dicom
     - contact
     - home
     - team
@@ -15,6 +21,4 @@
     - 404
 ## changelog
 ### v0.0.1
-- fonts
-    - Ubuntu
-    - Courier New
+- Ubuntu font

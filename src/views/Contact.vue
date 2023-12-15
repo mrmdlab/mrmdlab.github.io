@@ -4,7 +4,7 @@
             <v-img height="90%" src="@/assets/photos/Biopolis sign.jpg" alt="Biopolis sign" />
             <p>"Biopolis sign" by Kelman Chiang from SG photobank</p>
         </v-col>
-        <v-col cols="4" class="d-flex flex-column justify-center">
+        <v-col cols="4" class="d-flex flex-column justify-center ubuntu">
             <p class="mb-4">If you are interested in collaboration, you are welcome to have a lab tour.</p>
             <h2>Address</h2>
             11 Biopolis Way, #01-02 Helios, Singapore 138667

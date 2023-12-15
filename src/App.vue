@@ -13,15 +13,26 @@
     </v-app-bar>
 
     <v-main>
-      <v-container>
+      <v-container :fluid="fluid">
         <router-view />
       </v-container>
     </v-main>
+    <v-footer class="bg-grey-lighten-3 justify-center">
+      <span class="mr-4">© 2023 Magnetic Resonance Methods Development</span>
+      <a href="https://github.com/mrmdlab" target="_blank">
+        <img src="@/assets/github-mark.svg" height="30">
+      </a>
+    </v-footer>
   </v-app>
 </template>
 
 <script setup>
-//
+import { computed } from 'vue'
+import { useRoute } from 'vue-router'
+const route=useRoute()
+const fluid = computed(()=>{
+  return route.path=='/'?true:false
+})
 </script>
 
 <style scoped>
