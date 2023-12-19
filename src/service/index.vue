@@ -10,57 +10,66 @@
                         :value="service" color="primary">
                     </v-list-item>
                 </v-list-group>
+                <v-list-item title="How to collaborate" value="How to collaborate"></v-list-item>
             </v-list>
         </v-col>
         <v-col class="mt-4">
-            <h2>Result</h2>
-            <p class="ubuntu">{{ service_detail.result }}</p>
-            <h2>Description</h2>
-            <p class="ubuntu">{{ service_detail.description }}</p>
-            <h2>Examples</h2>
-            <v-expansion-panels>
-                <v-expansion-panel v-for="ex in service_detail.examples" :key="ex.name" :title="ex.name">
-                    <v-expansion-panel-text>
-                        <v-row>
-                            <v-col cols="6">
-                                <v-img :src="ex.photo"></v-img>
-                            </v-col>
-                            <v-col cols="6">
-                                <v-img :src="ex.gif"></v-img>
-                            </v-col>
+            <Collaborate class="ubuntu ml-4" v-if="active_service[0]=='How to collaborate'"/>
+            <template v-else>
+                <h2>Result</h2>
+                <p class="ubuntu">{{ service_detail.result }}</p>
+                <h2>Description</h2>
+                <p class="ubuntu">{{ service_detail.description }}</p>
+                <h2>Examples</h2>
+                <v-expansion-panels>
+                    <v-expansion-panel v-for="ex in service_detail.examples" :key="ex.name" :title="ex.name">
+                        <v-expansion-panel-text>
+                            <v-row>
+                                <v-col cols="6">
+                                    <v-img :src="ex.photo"></v-img>
+                                </v-col>
+                                <v-col cols="6">
+                                    <v-img :src="ex.gif"></v-img>
+                                </v-col>
 
-                            <v-col>
-                                <h4>Description</h4>
-                                <p>{{ ex.description }}</p>
-                                <v-table>
-                                    <thead>
-                                        <tr>
-                                            <th>Parameter</th>
-                                            <th>Value</th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                        <tr v-for="(value, key, i) in ex.params" :key="i">
-                                            <td>{{ key }}</td>
-                                            <td class="text-green monospace">{{ value }}</td>
-                                        </tr>
-                                    </tbody>
-                                </v-table>
-                                <p class="caption">*scan duration doesn't include time for preparation (induction of
-                                    anesthesia, tune and match, animal positioning, etc)</p>
-                                <p class="caption">*example images shown here have been slightly distorted due to JPEG and
-                                    GIF compression.</p>
-                            </v-col>
-                        </v-row>
-                    </v-expansion-panel-text>
-                </v-expansion-panel>
-            </v-expansion-panels>
+                                <v-col>
+                                    <h4>Description</h4>
+                                    <p>{{ ex.description }}</p>
+                                    <v-table>
+                                        <thead>
+                                            <tr>
+                                                <th>Parameter</th>
+                                                <th>Value</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr v-for="(value, key, i) in ex.params" :key="i">
+                                                <td>{{ key }}</td>
+                                                <td class="text-green monospace">{{ value }}</td>
+                                            </tr>
+                                        </tbody>
+                                    </v-table>
+                                    <p class="caption">*scan duration doesn't include time for preparation (induction of
+                                        anesthesia, tune and match, animal positioning, etc)</p>
+                                    <p class="caption">*example images shown here have been slightly distorted due to JPEG
+                                        and GIF compression.</p>
+                                </v-col>
+                            </v-row>
+                        </v-expansion-panel-text>
+                    </v-expansion-panel>
+                </v-expansion-panels>
+            </template>
         </v-col>
     </v-row>
 </template>
 
 <script>
+import Collaborate from './collaborate.md'
+
 export default {
+    components:{
+        Collaborate
+    },
     computed: {
         service_detail() {
             return this.details[this.active_service[0]]
@@ -177,7 +186,7 @@ export default {
                     ]
                 },
                 // "rodent brain diffusion MRI": {
-                //     result: "NIfTI data in BIDS arrangement",
+                //     result: "NIfTI data in BIDS arrangement, including bval and bvec files",
                 //     description: "",
                 //     examples: [
                 //         {

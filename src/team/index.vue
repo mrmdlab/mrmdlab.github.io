@@ -56,7 +56,7 @@ data() {
             {
                 name: "ONG Qunxiang",
                 position: "Senior Scientist",
-                imgUrl: import("/assets/photos/Paul.webp"),
+                imgUrl: import("/assets/photos/Qunxiang.webp"),
                 email: "ong_qunxiang@imcb.a-star.edu.sg",
                 description: "todo"
             },
