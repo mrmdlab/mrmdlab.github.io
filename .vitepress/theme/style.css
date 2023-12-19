@@ -1,0 +1,21 @@
+@font-face {
+  font-family: Ubuntu;
+  src: url("/assets/Ubuntu-Regular.ttf");
+}
+
+.ubuntu {
+  font-family: Ubuntu;
+}
+
+.monospace {
+  font-family: monospace;
+}
+
+.caption {
+  font-size: small;
+  font-family: Calibri;
+}
+
+.v-btn {
+  text-transform: none !important;
+}

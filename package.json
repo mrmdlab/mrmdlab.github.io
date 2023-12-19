@@ -1,0 +1,8 @@
+{
+  "devDependencies": {
+    "@mdi/font": "^7.3.67",
+    "vitepress": "^1.0.0-rc.32",
+    "vue": "^3.3.12",
+    "vuetify": "^3.4.7"
+  }
+}
