@@ -64,7 +64,7 @@
 </template>
 
 <script>
-import Collaborate from './collaborate.md'
+import Collaborate from '/components/collaborate.md'
 
 export default {
     components:{
