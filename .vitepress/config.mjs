@@ -8,6 +8,9 @@ export default defineConfig({
     ['meta',{name:"google-site-verification",content:"oeAEWYC-uhhbV_-2271KRAy8S2uevVRAHtwH-E2NL_I"}],
     ['meta',{name:"keywords",content:"rodent, mouse, rat, mri, singapore, preclinical, magnetic resonance, MR, mrmd, magnetic resonance methods development,新加坡,大鼠,小鼠,磁共振"}] 
   ],
+  sitemap: {
+    hostname: 'https://mrmdlab.github.io'
+  },
   srcDir: "src",
   vite: {
     ssr: {

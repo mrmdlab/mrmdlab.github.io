@@ -1,6 +1,7 @@
 ## todo
 - config
     - title
+    - sitemap
 - pages
     - team
         - TXQ
