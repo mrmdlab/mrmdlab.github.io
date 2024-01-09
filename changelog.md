@@ -1,7 +1,9 @@
 ## todo
+- adapt to phone screen
 - config
     - title
     - sitemap
+    - canonical URL
 - pages
     - team
         - TXQ
@@ -27,6 +29,8 @@
         - segmenthor
         - bruker2bids
         - MRflow
+        - Sequences
+            - SE DIXON with echo shift
     - home
 
 ## changelog

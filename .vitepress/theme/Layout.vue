@@ -1,15 +1,11 @@
 <template>
-   <v-app>
-    <v-app-bar density="compact" elevation="1">
-      <v-app-bar-title @click="go('/')">MRMDLab</v-app-bar-title>
+  <v-app>
+    <v-app-bar density="compact" elevation="1" class="px-10">
+      <v-app-bar-title><a href="/" :class="{ 'text-primary': isActive('/') }">MRMDLab</a></v-app-bar-title>
       <v-spacer></v-spacer>
-      <template v-slot:append>
-        <v-btn variant="plain" @click="go('/products/')">Products</v-btn>
-        <v-btn variant="plain" @click="go('/service/')">Service</v-btn>
-        <v-btn variant="plain" @click="go('/pricing/')">Pricing</v-btn>
-        <v-btn variant="plain" @click="go('/team/')">Team</v-btn>
-        <v-btn variant="plain" @click="go('/contact/')">Contact</v-btn>
-      </template>
+      <v-btn v-for="tab in tabs" :key="tab.name" :class="{ 'text-primary': isActive(tab.path) }" :href="tab.path">{{ tab.name
+      }}
+      </v-btn>
     </v-app-bar>
 
     <v-main>
@@ -28,18 +24,34 @@
 </template>
 
 <script setup>
-import { useRouter, useRoute } from 'vitepress'
+import { useRoute } from 'vitepress'
 import { computed } from 'vue'
 
-const { go } = useRouter()
-const route=useRoute()
-const fluid = computed(()=>{
-  return route.path=='/'?true:false
+const route = useRoute()
+const fluid = computed(() => {
+  return route.path == '/' ? true : false
 })
+
+const tabs = [
+  { name: "Products", path: "/products/" },
+  { name: "Service", path: "/service/" },
+  { name: "Pricing", path: "/pricing/" },
+  { name: "Team", path: "/team/" },
+  { name: "Contact", path: "/contact/" },
+]
+
+function isActive(path) {
+  return route.path === path
+}
 </script>
 
 <style scoped>
 .v-app-bar-title:hover {
   cursor: pointer;
+}
+
+a {
+  text-decoration: none;
+  color: black
 }
 </style>

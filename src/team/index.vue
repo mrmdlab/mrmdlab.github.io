@@ -5,8 +5,8 @@
                 <v-list-subheader>
                     <h2>Team</h2>
                 </v-list-subheader>
-                <v-list-item variant="plain" v-for="i in people.length" :key="i - 1" :title="people[i - 1].name"
-                    :value="i - 1" color="primary">
+                <v-list-item variant="plain" v-for="(person,i) in people" :key="i" :title="person.name"
+                    :value="i" color="primary">
                 </v-list-item>
             </v-list>
         </v-col>
