@@ -51,7 +51,7 @@ data() {
                 position: "Senior Research Officer",
                 imgUrl: import("/assets/photos/TXQ.webp"),
                 email: "teo_xing_qi@imcb.a-star.edu.sg",
-                description: "todo"
+                description: "Xing Qi is an accomplished MRI researcher specializing in preclinical imaging for animal studies. With over a decade of expertise in MRI techniques for small animal research, she acts as a bridge between preclinical discoveries and advancements in human healthcare. Holding bachelor's degree with first class honours in biomedical sciences, her passion lies in pioneering MRI methodologies to extract crucial insights from animal models, directly impacting clinical outcomes."
             },
             {
                 name: "ONG Qunxiang",
@@ -72,7 +72,7 @@ data() {
                 position: "Principal Scientist",
                 imgUrl: import("/assets/photos/Paul.webp"),
                 email: "paul_cassidy@imcb.a-star.edu.sg",
-                description: "todo"
+                description: "Dr. Cassidy obtained his DPhil in Radio-Frequency Coil Design for Magnetic Resonance from the University of Oxford in 2002. He did postdoctoral research establishing instrumentation for preclinical MRI at the University of Oxford and then left academia and worked in the MRI industry in the UK, Canada, and Australia. He rejoined academia as a Lecturer in Biomedical Engineering at Griffith University, Gold Coast, Australia, before joining MRMD in 2014."
             },
             {
                 name: "FENG Haosheng",
