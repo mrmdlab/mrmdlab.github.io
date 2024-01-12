@@ -35,7 +35,7 @@ const fluid = computed(() => {
 const tabs = [
   { name: "Products", path: "/products/" },
   { name: "Service", path: "/service/" },
-  { name: "Pricing", path: "/pricing/" },
+  // { name: "Pricing", path: "/pricing/" },
   { name: "Team", path: "/team/" },
   { name: "Contact", path: "/contact/" },
 ]

@@ -22,10 +22,10 @@ import Segmenthor from "./segmenthor.md"
 import { ref, onMounted } from 'vue'
 
 let active_prod = ref(["bruker2bids"])
-let products = ref({
+let products = {
     bruker2bids,
     Segmenthor
-})
+}
 
 onMounted(()=>{
     const path = window.location.href

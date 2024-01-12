@@ -41,7 +41,7 @@ data() {
         people: [
             {
                 name: "LEE Kuan Jin",
-                position: "group leader",
+                position: "Group Leader",
                 imgUrl: import("/assets/photos/LKJ.webp"),
                 email: "lee_kuan_jin@imcb.a-star.edu.sg",
                 description: "Dr. Lee obtained his PhD in Magnetic Resonance Imaging from the University of Sheffield in 2003. He did postdoctoral research at the Academic Unit of Radiology at the University of Sheffield, and then in Jürgen Hennig's Magnetic Resonance laboratory at the University Medical Center, Freiburg.Dr Lee worked at Siemens Healthcare before establishing MRMD in 2014."
