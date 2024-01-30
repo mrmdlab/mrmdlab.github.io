@@ -53,20 +53,20 @@ data() {
                 email: "teo_xing_qi@imcb.a-star.edu.sg",
                 description: "Xing Qi is an accomplished MRI researcher specializing in preclinical imaging for animal studies. With over a decade of expertise in MRI techniques for small animal research, she acts as a bridge between preclinical discoveries and advancements in human healthcare. Holding bachelor's degree with first class honours in biomedical sciences, her passion lies in pioneering MRI methodologies to extract crucial insights from animal models, directly impacting clinical outcomes."
             },
-            {
-                name: "ONG Qunxiang",
-                position: "Senior Scientist",
-                imgUrl: import("/assets/photos/Qunxiang.webp"),
-                email: "ong_qunxiang@imcb.a-star.edu.sg",
-                description: "todo"
-            },
-            {
-                name: "Isaac HUEN",
-                position: "Senior Scientist",
-                imgUrl: import("/assets/photos/LKJ.webp"),
-                email: "isaac_huen@imcb.a-star.edu.sg",
-                description: "todo"
-            },
+            // {
+            //     name: "ONG Qunxiang",
+            //     position: "Senior Scientist",
+            //     imgUrl: import("/assets/photos/Qunxiang.webp"),
+            //     email: "ong_qunxiang@imcb.a-star.edu.sg",
+            //     description: "todo"
+            // },
+            // {
+            //     name: "Isaac HUEN",
+            //     position: "Senior Scientist",
+            //     imgUrl: import("/assets/photos/LKJ.webp"),
+            //     email: "isaac_huen@imcb.a-star.edu.sg",
+            //     description: "todo"
+            // },
             {
                 name: "Paul CASSIDY",
                 position: "Principal Scientist",
