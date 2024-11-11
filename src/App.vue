@@ -20,7 +20,7 @@
       </v-container>
     </v-main>
     <v-footer class="bg-grey-lighten-3 justify-center">
-      <span class="mr-4">© 2023 Magnetic Resonance Methods Development</span>
+      <span class="mr-4">© 2024 Magnetic Resonance Methods Development</span>
       <a href="https://github.com/mrmdlab" target="_blank">
         <img src="@/assets/github-mark.svg" height="30">
       </a>
