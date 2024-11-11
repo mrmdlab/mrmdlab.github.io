@@ -1,78 +1,59 @@
 <template>
-    <v-row>
+    <v-row class="my-4 justify-center" v-for="p in people" :key=p.name>
         <v-col cols="3">
-            <v-list density="compact" v-model:selected="active_id" mandatory>
-                <v-list-subheader>
-                    <h2>Team</h2>
-                </v-list-subheader>
-                <v-list-item variant="plain" v-for="i in people.length" :key="i - 1" :title="people[i - 1].name"
-                    :value="i - 1" color="primary">
-                </v-list-item>
-            </v-list>
+            <v-img :src="p.imgUrl" max-height="70%"></v-img>
+            <p class="text-center">{{ p.name }}</p>
         </v-col>
-
-        <v-col class="mt-8">
-            <v-row>
-                <v-col cols="3">
-                    <v-img :src="active_person.imgUrl"></v-img>
-                </v-col>
-                <v-col>
-                    <h3>{{ active_person.position }}</h3>
-                    <a :href="`mailto:` + active_person.email">
-                        <v-icon size="small" icon="mdi-email-outline"></v-icon>{{ active_person.email }}
-                    </a>
-                    <p class="ubuntu mt-2 text-justify">{{ active_person.description }}</p>
-                </v-col>
-            </v-row>
+        <v-col cols="6">
+            <h3>{{ p.position }}</h3>
+            <a :href="`mailto:` + p.email">
+                <v-icon size="small" icon="mdi-email-outline"></v-icon>{{ p.email }}
+            </a>
+            <p class="ubuntu mt-2 text-justify">{{ p.description }}</p>
+        </v-col>
+    </v-row>
+    <v-row class="justify-center" v-for="p in interns" :key=p.name>
+        <v-col>
+            <p class="text-end">{{ p.name }}</p>
+        </v-col>
+        <v-col>
+            <p class="text-center">{{ p.position }}</p>
         </v-col>
     </v-row>
 </template>
 
 <script>
 export default {
-    computed: {
-        active_person() {
-            return this.people[this.active_id[0]]
-        }
-    },
     data() {
         return {
-            active_id: [0],
             people: [
                 {
-                    name: "LEE Kuan Jin",
-                    position: "group leader",
-                    imgUrl: import("@/assets/photos/LKJ.webp"),
-                    email: "lee_kuan_jin@imcb.a-star.edu.sg",
-                    description: "Dr. Lee obtained his PhD in Magnetic Resonance Imaging from the University of Sheffield in 2003. He did postdoctoral research at the Academic Unit of Radiology at the University of Sheffield, and then in Jürgen Hennig's Magnetic Resonance laboratory at the University Medical Center, Freiburg.Dr Lee worked at Siemens Healthcare before establishing MRMD in 2014."
-                },
-                {
-                    name: "TEO Xing Qi",
-                    position: "Senior Research Officer",
-                    imgUrl: import("@/assets/photos/TXQ.webp"),
-                    email: "teo_xing_qi@imcb.a-star.edu.sg",
-                    description: "todo"
-                },
-                {
                     name: "ONG Qunxiang",
-                    position: "Senior Scientist",
-                    imgUrl: import("@/assets/photos/Paul.webp"),
+                    position: "Platform Lead",
+                    imgUrl: import("@/assets/photos/QX.webp"),
                     email: "ong_qunxiang@imcb.a-star.edu.sg",
-                    description: "todo"
-                },
-                {
-                    name: "Isaac HUEN",
-                    position: "Senior Scientist",
-                    imgUrl: import("@/assets/photos/LKJ.webp"),
-                    email: "isaac_huen@imcb.a-star.edu.sg",
-                    description: "todo"
+                    description: "Dr. Ong received his PhD in Chemical Biology from Stanford University, where he invented novel optogenetic tools to probe into protein activity and function. At IMCB, he applies these tools to investigate the role of proteins in metabolic diseases and complication."
                 },
                 {
                     name: "Paul CASSIDY",
-                    position: "Principal Scientist",
+                    position: "Platform Manager",
                     imgUrl: import("@/assets/photos/Paul.webp"),
                     email: "paul_cassidy@imcb.a-star.edu.sg",
-                    description: "todo"
+                    description: "Dr. Cassidy obtained his DPhil in Radio-Frequency Coil Design for Magnetic Resonance from the University of Oxford in 2002. He did postdoctoral research establishing instrumentation for preclinical MRI at the University of Oxford and then left academia and worked in the MRI industry in the UK, Canada, and Australia. He rejoined academia as a Lecturer in Biomedical Engineering at Griffith University, Gold Coast, Australia, before joining MRI platform in 2014."
+                },
+                {
+                    name: "LEE Kuan Jin",
+                    position: "Technical Consultant",
+                    imgUrl: import("@/assets/photos/LKJ.webp"),
+                    email: "lee_kuan_jin@imcb.a-star.edu.sg",
+                    description: "Dr. Lee obtained his PhD in Magnetic Resonance Imaging from the University of Sheffield in 2003. He did postdoctoral research at the Academic Unit of Radiology at the University of Sheffield, and then in Jürgen Hennig's Magnetic Resonance laboratory at the University Medical Center, Freiburg. Dr Lee worked at Siemens Healthcare before joining MRI platform in 2014."
+                },
+                {
+                    name: "TEO Xing Qi",
+                    position: "Lab Manager",
+                    imgUrl: import("@/assets/photos/TXQ.webp"),
+                    email: "teo_xing_qi@imcb.a-star.edu.sg",
+                    description: "Xing Qi is an accomplished MRI researcher specializing in preclinical imaging for animal studies. With over a decade of expertise in MRI techniques for small animal research, she acts as a bridge between preclinical discoveries and advancements in human healthcare. Holding bachelor's degree with first class honours in biomedical sciences, her passion lies in pioneering MRI methodologies to extract crucial insights from animal models, directly impacting clinical outcomes."
                 },
                 {
                     name: "FENG Haosheng",
@@ -81,7 +62,28 @@ export default {
                     email: "feng_haosheng@imcb.a-star.edu.sg",
                     description: "Haosheng graduated from Southern University of Science and Technology as a Biomedical Engineering bachelor in 2022. As the youngest member in the team, Haosheng has been learning MRI theory, experiments and best practices from his friendly colleagues diligently. His contribution in software engineering is also appreciated by the team."
                 },
+                {
+                    name: "Alicia TAN",
+                    position: "Research Officer",
+                    imgUrl: import("@/assets/photos/Alicia.webp"),
+                    email: "alicia_tan@imcb.a-star.edu.sg",
+                    description: "Alicia is very good at learning new knowledge and skills."
+                },
             ],
+            interns: [
+                {
+                    name: "Zheng Yao Kong",
+                    position: "Internship",
+                },
+                {
+                    name: "Huijun LIM",
+                    position: "Internship",
+                },
+                {
+                    name: "PHEOBE EDELINE LEE YU YING",
+                    position: "Internship",
+                },
+            ]
         }
     },
     created() {

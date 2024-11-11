@@ -1,6 +1,6 @@
 <template>
   <v-row id="slogan" class="d-flex flex-column justify-space-around align-center">
-    <h1 class="text-h3 mt-8">Rodent MRI and MRS in Singapore</h1>
+    <h1 class="text-h3 mt-8">MRI Platform and Probe Development</h1>
     <div class="text-center ubuntu font-weight-bold">
       <p>We're Magnetic Resonance Methods Development.</p>
       <p>We strive to become a cutting-edge laboratory dedicated to </p>

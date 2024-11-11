@@ -7,8 +7,8 @@ const routes = [
     component: () => import('@/views/Home.vue'),
   },
   {
-    path:'/products',
-    component: () => import('@/views/Products.vue')
+    path:'/resources',
+    component: () => import('@/views/Resources.vue')
   },
   {
     path:'/service',
@@ -25,6 +25,14 @@ const routes = [
   {
     path:"/team",
     component: () => import('@/views/Team.vue')
+  },
+  {
+    path:"/about",
+    component: () => import('@/views/About.vue')
+  },
+  {
+    path:"/publications",
+    component: () => import('@/views/Publications.vue')
   },
   {
     path: '/:catchAll(.*)',
