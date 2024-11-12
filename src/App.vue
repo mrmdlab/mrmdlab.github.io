@@ -1,16 +1,11 @@
 <template>
   <v-app>
-    <v-app-bar density="compact" elevation="1">
+    <v-app-bar density="compact" elevation="1" class="px-10">
       <v-app-bar-title @click="$router.push('/')">IMCB MRI</v-app-bar-title>
-      <v-spacer></v-spacer>
-      <template v-slot:append>
-        <v-btn variant="plain" @click="$router.push('/team')">Team</v-btn>
-        <v-btn variant="plain" @click="$router.push('/service')">Service</v-btn>
-        <!-- <v-btn variant="plain" @click="$router.push('/pricing')">Pricing</v-btn> -->
-        <v-btn variant="plain" @click="$router.push('/resources')">Pesources</v-btn>
-        <!-- <v-btn variant="plain" @click="$router.push('/publications')">Publications</v-btn> -->
-        <v-btn variant="plain" @click="$router.push('/contact')">Contact</v-btn>
-        <!-- <v-btn variant="plain" @click="$router.push('/about')">About</v-btn> -->
+      <template #append>
+        <v-btn v-for="tab in tabs" :key="tab.name" :class="{ 'text-primary': isActive(tab.path) }" @click="$router.push(tab.path)">
+          {{ tab.name }}
+        </v-btn>
       </template>
     </v-app-bar>
 
@@ -31,10 +26,24 @@
 <script setup>
 import { computed } from 'vue'
 import { useRoute } from 'vue-router'
-const route=useRoute()
-const fluid = computed(()=>{
-  return route.path=='/'?true:false
+const route = useRoute()
+const fluid = computed(() => {
+  return route.path == '/' ? true : false
 })
+
+function isActive(path) {
+  return route.path === path
+}
+
+const tabs = [
+  { name: "Team", path: "/team" },
+  { name: "Service", path: "/service" },
+  // { name: "Pricing", path: "/pricing" },
+  { name: "Resources", path: "/resources" },
+  // { name: "Publications", path: "/publications" },
+  { name: "Contact", path: "/contact" },
+  // { name: "About", path: "/about" },
+]
 </script>
 
 <style scoped>
