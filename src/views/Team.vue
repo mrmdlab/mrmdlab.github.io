@@ -12,12 +12,19 @@
             <p class="ubuntu mt-2 text-justify">{{ p.description }}</p>
         </v-col>
     </v-row>
-    <v-row class="justify-center" v-for="p in interns" :key=p.name>
-        <v-col>
-            <p class="text-end">{{ p.name }}</p>
-        </v-col>
-        <v-col>
-            <p class="text-center">{{ p.position }}</p>
+    <h1 class="text-h3 text-center mb-5">Internship</h1>
+    <v-row class="justify-center">
+        <v-col cols="2"></v-col>
+        <v-col cols="6">
+            <v-table>
+                <tbody>
+                    <tr v-for="(group, i) in intern_groups" :key="'g' + i">
+                        <td v-for="p in group" :key="p.name">
+                            {{ p.name }}
+                        </td>
+                    </tr>
+                </tbody>
+            </v-table>
         </v-col>
     </v-row>
 </template>
@@ -71,19 +78,28 @@ export default {
                 },
             ],
             interns: [
-                {
-                    name: "Zheng Yao Kong",
-                    position: "Internship",
-                },
-                {
-                    name: "Huijun LIM",
-                    position: "Internship",
-                },
-                {
-                    name: "PHEOBE EDELINE LEE YU YING",
-                    position: "Internship",
-                },
+                { name: "LIM Hui Jun" },
+                { name: "KONG Zheng Yao" },
+                { name: "Pheobe Edeline LEE Yu Ying" },
+                { name: "WONG Yu Qing" },
+                { name: "ZHU Chengan" },
+                { name: "Harry ZHONG" }
             ]
+        }
+    },
+    computed: {
+        intern_groups() {
+            const len = Math.floor(this.interns.length / 2) * 2
+            const result = []
+            let i = 0
+            while (i < len) {
+                result.push([this.interns[i], this.interns[i + 1]])
+                i += 2
+            }
+            if (i < this.interns.length) {
+                result.push([this.interns[i]])
+            }
+            return result
         }
     },
     created() {
@@ -100,5 +116,9 @@ export default {
 a {
     text-decoration: none;
     color: #257CB7;
+}
+
+.v-table td {
+    border-bottom: none !important;
 }
 </style>
