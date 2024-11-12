@@ -6,11 +6,11 @@
       <template v-slot:append>
         <v-btn variant="plain" @click="$router.push('/team')">Team</v-btn>
         <v-btn variant="plain" @click="$router.push('/service')">Service</v-btn>
-        <v-btn variant="plain" @click="$router.push('/pricing')">Pricing</v-btn>
+        <!-- <v-btn variant="plain" @click="$router.push('/pricing')">Pricing</v-btn> -->
         <v-btn variant="plain" @click="$router.push('/resources')">Pesources</v-btn>
-        <v-btn variant="plain" @click="$router.push('/publications')">Publications</v-btn>
+        <!-- <v-btn variant="plain" @click="$router.push('/publications')">Publications</v-btn> -->
         <v-btn variant="plain" @click="$router.push('/contact')">Contact</v-btn>
-        <v-btn variant="plain" @click="$router.push('/about')">About</v-btn>
+        <!-- <v-btn variant="plain" @click="$router.push('/about')">About</v-btn> -->
       </template>
     </v-app-bar>
 
