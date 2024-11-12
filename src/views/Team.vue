@@ -32,7 +32,7 @@ export default {
                     position: "Platform Lead",
                     imgUrl: import("@/assets/photos/QX.webp"),
                     email: "ong_qunxiang@imcb.a-star.edu.sg",
-                    description: "Dr. Ong received his PhD in Chemical Biology from Stanford University, where he invented novel optogenetic tools to probe into protein activity and function. At IMCB, he applies these tools to investigate the role of proteins in metabolic diseases and complication."
+                    description: "Dr. Ong obtained his PhD in Chemistry from Stanford University in 2018 in Bianxiao Cui lab. He did postdoctoral research at the Department of Comparative Medicine in Yale University under Prof Xiaoyong Yang and the Laboratory of Metabolic Medicine in IMCB under Prof Han Weiping. He is a multidisciplinary scientist who uses light and magnetic fields to probe intricate insights into biology."
                 },
                 {
                     name: "Paul CASSIDY",
@@ -67,7 +67,7 @@ export default {
                     position: "Research Officer",
                     imgUrl: import("@/assets/photos/Alicia.webp"),
                     email: "alicia_tan@imcb.a-star.edu.sg",
-                    description: "Alicia is very good at learning new knowledge and skills."
+                    description: "Alicia graduated from NUS Life sciences with a Bachelor in Science. She is a research officer with vast hands-on experience performing clerical and laboratory work to advance research goals. As an integral member of the Han Weiping group, Alicia is both adept at experimentation and data analysis in neurological and MRI studies."
                 },
             ],
             interns: [

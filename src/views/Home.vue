@@ -1,10 +1,8 @@
 <template>
   <v-row id="slogan" class="d-flex flex-column justify-space-around align-center">
     <h1 class="text-h3 mt-8">MRI Platform and Probe Development</h1>
-    <div class="text-center ubuntu font-weight-bold">
-      <p>We're Magnetic Resonance Methods Development.</p>
-      <p>We strive to become a cutting-edge laboratory dedicated to </p>
-      <p>magnetic resonance imaging and spectroscopy services</p>
+    <div id="desc" class="text-justify ubuntu font-weight-bold">
+      <p>IMCB Magnetic Resonance Imaging (MRI) platform provides a comprehensive pipeline for non-invasive live imaging of rodents, providing structural and functional information with high spatiotemporal resolution. We are powered by two ultra high field MRI scanners at 9.4T and 11.7T respectively, and at the same time, we provide expertise in hyperpolarized 13C metabolic flux imaging, which includes novel hyperpolarizable probe development for bespoke applications.</p>
     </div>
     <v-btn size="large" @click="$router.push('/service')" theme="dark">Learn More</v-btn>
   </v-row>
@@ -60,6 +58,11 @@ points.value.forEach((pnt) => {
   background: url("@/assets/photos/homepage background.jpg");
   background-size: cover;
   height: 90vh;
+}
+
+#desc {
+  max-width: 50%;
+  font-size: 13pt;
 }
 
 .photo {

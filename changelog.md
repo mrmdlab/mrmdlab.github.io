@@ -1,4 +1,9 @@
 ## todo
+- formspree.io: set target email to Qunxiang
+- 更改mrmd@imcb.a-star.edu.sg
+
+
+
 - adapt to phone?
 - SEO, SSG, SSR
 - update bruker2bids to get more parameters
