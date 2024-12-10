@@ -83,7 +83,8 @@ export default {
                 { name: "Pheobe Edeline LEE Yu Ying" },
                 { name: "WONG Yu Qing" },
                 { name: "ZHU Chengan" },
-                { name: "Harry ZHONG" }
+                { name: "Harry ZHONG" },
+                { name: "LIU Xinyue" },
             ]
         }
     },
