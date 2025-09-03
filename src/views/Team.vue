@@ -62,13 +62,13 @@ export default {
                     email: "teo_xing_qi@imcb.a-star.edu.sg",
                     description: "Xing Qi is an accomplished MRI researcher specializing in preclinical imaging for animal studies. With over a decade of expertise in MRI techniques for small animal research, she acts as a bridge between preclinical discoveries and advancements in human healthcare. Holding bachelor's degree with first class honours in biomedical sciences, her passion lies in pioneering MRI methodologies to extract crucial insights from animal models, directly impacting clinical outcomes."
                 },
-                {
-                    name: "FENG Haosheng",
-                    position: "Research Officer",
-                    imgUrl: import("@/assets/photos/FHS.webp"),
-                    email: "feng_haosheng@imcb.a-star.edu.sg",
-                    description: "Haosheng graduated from Southern University of Science and Technology as a Biomedical Engineering bachelor in 2022. As the youngest member in the team, Haosheng has been learning MRI theory, experiments and best practices from his friendly colleagues diligently. His contribution in software engineering is also appreciated by the team."
-                },
+                // {
+                //     name: "FENG Haosheng",
+                //     position: "Research Officer",
+                //     imgUrl: import("@/assets/photos/FHS.webp"),
+                //     email: "feng_haosheng@imcb.a-star.edu.sg",
+                //     description: "Haosheng graduated from Southern University of Science and Technology as a Biomedical Engineering bachelor in 2022. As the youngest member in the team, Haosheng has been learning MRI theory, experiments and best practices from his friendly colleagues diligently. His contribution in software engineering is also appreciated by the team."
+                // },
                 {
                     name: "Alicia TAN",
                     position: "Research Officer",
