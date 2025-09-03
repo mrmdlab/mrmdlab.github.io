@@ -38,28 +38,28 @@ export default {
                     name: "ONG Qunxiang",
                     position: "Platform Lead",
                     imgUrl: import("@/assets/photos/QX.webp"),
-                    email: "ong_qunxiang@imcb.a-star.edu.sg",
+                    email: "ong_qunxiang@a-star.edu.sg",
                     description: "Dr. Ong obtained his PhD in Chemistry from Stanford University in 2018 in Bianxiao Cui lab. He did postdoctoral research at the Department of Comparative Medicine in Yale University under Prof Xiaoyong Yang and the Laboratory of Metabolic Medicine in IMCB under Prof Han Weiping. He is a multidisciplinary scientist who uses light and magnetic fields to probe intricate insights into biology."
                 },
                 {
                     name: "Paul CASSIDY",
                     position: "Platform Manager",
                     imgUrl: import("@/assets/photos/Paul.webp"),
-                    email: "paul_cassidy@imcb.a-star.edu.sg",
+                    email: "paul_cassidy@a-star.edu.sg",
                     description: "Dr. Cassidy obtained his DPhil in Radio-Frequency Coil Design for Magnetic Resonance from the University of Oxford in 2002. He did postdoctoral research establishing instrumentation for preclinical MRI at the University of Oxford and then left academia and worked in the MRI industry in the UK, Canada, and Australia. He rejoined academia as a Lecturer in Biomedical Engineering at Griffith University, Gold Coast, Australia, before joining MRI platform in 2014."
                 },
-                {
-                    name: "LEE Kuan Jin",
-                    position: "Technical Consultant",
-                    imgUrl: import("@/assets/photos/LKJ.webp"),
-                    email: "lee_kuan_jin@imcb.a-star.edu.sg",
-                    description: "Dr. Lee obtained his PhD in Magnetic Resonance Imaging from the University of Sheffield in 2003. He did postdoctoral research at the Academic Unit of Radiology at the University of Sheffield, and then in Jürgen Hennig's Magnetic Resonance laboratory at the University Medical Center, Freiburg. Dr Lee worked at Siemens Healthcare before joining MRI platform in 2014."
-                },
+                // {
+                //     name: "LEE Kuan Jin",
+                //     position: "Technical Consultant",
+                //     imgUrl: import("@/assets/photos/LKJ.webp"),
+                //     email: "lee_kuan_jin@imcb.a-star.edu.sg",
+                //     description: "Dr. Lee obtained his PhD in Magnetic Resonance Imaging from the University of Sheffield in 2003. He did postdoctoral research at the Academic Unit of Radiology at the University of Sheffield, and then in Jürgen Hennig's Magnetic Resonance laboratory at the University Medical Center, Freiburg. Dr Lee worked at Siemens Healthcare before joining MRI platform in 2014."
+                // },
                 {
                     name: "TEO Xing Qi",
                     position: "Lab Manager",
                     imgUrl: import("@/assets/photos/TXQ.webp"),
-                    email: "teo_xing_qi@imcb.a-star.edu.sg",
+                    email: "teo_xing_qi@a-star.edu.sg",
                     description: "Xing Qi is an accomplished MRI researcher specializing in preclinical imaging for animal studies. With over a decade of expertise in MRI techniques for small animal research, she acts as a bridge between preclinical discoveries and advancements in human healthcare. Holding bachelor's degree with first class honours in biomedical sciences, her passion lies in pioneering MRI methodologies to extract crucial insights from animal models, directly impacting clinical outcomes."
                 },
                 // {
@@ -73,7 +73,7 @@ export default {
                     name: "Alicia TAN",
                     position: "Research Officer",
                     imgUrl: import("@/assets/photos/Alicia.webp"),
-                    email: "alicia_tan@imcb.a-star.edu.sg",
+                    email: "Alicia_Tanql@a-star.edu.sg",
                     description: "Alicia graduated from NUS Life sciences with a Bachelor in Science. She is a research officer with vast hands-on experience performing clerical and laboratory work to advance research goals. As an integral member of the Han Weiping group, Alicia is both adept at experimentation and data analysis in neurological and MRI studies."
                 },
             ],
