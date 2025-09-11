@@ -39,7 +39,7 @@ const tabs = [
   { name: "Team", path: "/team" },
   { name: "Service", path: "/service" },
   // { name: "Pricing", path: "/pricing" },
-  { name: "Resources", path: "/resources" },
+  // { name: "Resources", path: "/resources" },
   // { name: "Publications", path: "/publications" },
   { name: "Contact", path: "/contact" },
   // { name: "About", path: "/about" },
