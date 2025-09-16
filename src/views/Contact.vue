@@ -9,7 +9,7 @@
             <h2>Address</h2>
             11 Biopolis Way, #01-02 Helios, Singapore 138667
             <h2>Email</h2>
-            mrmd@imcb.a-star.edu.sg
+            ong_qunxiang@a-star.edu.sg
         </v-col>
     </v-row>
 
